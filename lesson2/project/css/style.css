@@ -1,0 +1,24 @@
+p {
+    color: blue;
+}
+
+li {
+    color: gold;
+    font-size: 40px;
+}
+
+h3 {
+    color: green;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: palegreen;
+    font-size: 24px;
+}
+
+.qweqweqwe {
+    color: royalblue;
+    font-size: 32px;
+}
