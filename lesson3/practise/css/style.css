@@ -1,0 +1,15 @@
+body {
+    background: #f9f9f9;
+}
+
+.wrapper {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    width: 145px;
+}
