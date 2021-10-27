@@ -1,0 +1,48 @@
+<!--
+   Контекстный селектор используется для выбора элементов, удовлетворяющих определённому контексту.
+-->
+
+<html>
+<head>
+    <meta charset='UTF-8' />
+    <title>Style</title>
+    <style>
+        div {
+            color: Green;
+            font-size: 18pt;
+            font-family: Arial;
+            background-color: green;
+        }
+        p {
+            background-color: #ff0;
+        }
+        div div {
+            color: Blue;
+            background-color: aqua;
+            }
+
+        div p {
+            background-color: Red;
+            }
+        .special-one{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <p>PARAGRAPH</p>
+
+    <div>
+
+        <p>PARAGRAPH IN DIV</p>
+
+        <div>
+           DIV IN DIV
+        </div>
+        <div class="special-one">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est similique et illo, inventore tempore quae in eveniet ut molestias earum, eos vitae! Sunt saepe in aperiam corrupti, numquam architecto.
+        </div>
+
+    </div>
+</body>
+</html>

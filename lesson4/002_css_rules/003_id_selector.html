@@ -1,0 +1,48 @@
+<!--
+Идентификатор - особенный вид селектора, который используется для обращения к элементу и изменения его стиля.
+
+Идентификатор (ID селектор) определяетя уникальное имя элемента, поэтому по умолчанию предполагается, 
+что элемент с таким селектором на странице один.
+
+Чтобы задать идентификатор, в CSS необходимо использовать конструкцию #имяИдентификатора. 
+Чтобы привязать к этому идентификатору элемент, в открывающем теге необходимо указать атрибут id = "имяИдентификатора".
+-->
+
+<html>
+<head>
+
+    <title>ID style</title>
+
+    <style type="text/css">
+        #Id1 {
+            font-family: 'Segoe UI';
+            font-size: 18pt;
+            color: green;
+        }
+        
+        div {
+            background-color: Yellow;
+        }
+
+        .class {
+            color: red;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>Paragraph</p>
+
+    <p id="Id1">Paragraph with #id1</p>
+    <p id="P1" class="class">Paragraph with #p1 & .class</p>
+
+    <p id="Id1">Paragraph with #id1</p>
+    <div class="class">
+        Div with .class
+    </div>
+
+
+</body>
+</html>

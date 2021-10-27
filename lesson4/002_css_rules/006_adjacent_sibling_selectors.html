@@ -1,0 +1,40 @@
+<!--
+Соседний селектор выбрает только тот элемент, который следует сразу же за указанным элементом.
+-->
+
+<html>
+<head>
+    <title>Style</title>
+
+    <style type="text/css">
+        p + span + div {
+            background-color: Red;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph</p>
+    
+    <span>span</span>
+    
+    <!-- <span>span</span> -->
+    
+    <div>
+       div
+    </div>
+
+    <p>Paragraph</p>
+    
+    <span>span</span>
+    
+    <!-- <span>span</span> -->
+    
+    <div>
+       div
+    </div>
+
+    <span>span</span>
+
+
+</body>
+</html>

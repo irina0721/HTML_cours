@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<style type="text/css">
+	.main {
+		width: 152px;
+		height: 608px;
+		margin: 0 auto;
+	}
+	.red, .yellow, .green, .navy {
+		width: 150px;
+		height: 150px;
+		border: 1px solid #000;
+		position: relative;
+	}
+	.red {
+		background-color: #f00;
+	}
+	.yellow {
+		background-color: #ffff00;
+	}
+	.green {
+		background-color: #0f0;
+	}
+	.navy {
+		background-color: #000080;
+	}
+	.pointer {
+		font-size: 20px;
+		width: 100px;
+		border-bottom: 2px solid #000;
+		position: absolute;
+	}
+	.pointer.expl-red, .pointer.expl-green {
+	    bottom: 30px;
+    	right: -60px;
+		text-align: right;
+	}
+	.pointer.expl-yellow, .pointer.expl-navy {
+		bottom: 30px;
+		left: -60px;
+		text-align: left;
+	}
+	</style>
+</head>
+<body>
+	<h1>Some test text</h1>
+	<span>asdasdasd</span>
+	<p>Some more text</p>
+	<h2>Some mote test text goes here</h2>
+	<div class="main">
+		<div class="red">
+			<div class="pointer expl-red">red</div>
+		</div>
+		<div class="yellow">
+			<div class="pointer expl-yellow">yellow</div>
+		</div>
+		<div class="green">
+			<div class="pointer expl-green">green</div>
+		</div>
+		<div class="navy">
+			<div class="pointer expl-navy">navy</div>
+		</div>
+	</div>
+	
+	
+	
+	
+</body>
+</html>

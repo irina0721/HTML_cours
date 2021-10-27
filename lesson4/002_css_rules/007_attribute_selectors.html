@@ -1,0 +1,38 @@
+<!--
+ Селектор атрибутов выберет только те элементы, у которых имеется указанный атрибут: X[title] { }
+
+Также можно указать конкретное значение для атрибута: X[title="123"] { }
+
+"*" перед "=" означает, что указанное значение должно быть частью указанного атрибута: X[title*=".com"] { }
+
+"^" перед "=" означает, что значение атрибута должно начинаться с указанных символов: X[title^="http"] { }
+
+"$" перед "=" означает, что значение атрибута должно заканчиваться указанными символами: X[title$="http"] { }
+-->
+
+<html>
+<head>
+    <title>Style</title>
+    <meta charset='UTF-8' />
+    <style type="text/css">
+        p[title] {
+            background-color: Red;
+        }
+
+        p[title*=".com"] {
+            background-color: Blue;
+        }
+
+        input[type="text"] {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph</p>
+    <p title="">Paragraph</p>
+    <p title="hello.com">Paragraph</p>
+    <input type="text" placeholder="please enter your name">
+    <input type="password" placeholder="please enter your password">
+</body>
+</html>
