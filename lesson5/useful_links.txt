@@ -1,0 +1,6 @@
+полезные ссылки:
+https://www.stijit.com/html-css/30-css-selektorov-selectors
+http://css.yoksel.ru/flexbox/
+https://wp-kama.ru/id_8045/flex-v-css.html
+http://ikode.ru/articles/interaktivnaya-shpargalka-po-flexbox
+https://css-live.ru/articles-css/shpargalka-po-shpargalke-po-flexbox.html

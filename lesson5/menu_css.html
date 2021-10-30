@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu css</title>
+    <style>
+        .menu{
+            background: grey;
+        }
+
+        .menu > li{
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .has-sub{
+            position: relative;
+        }
+
+        .sub-menu{
+            display: none;
+            position: absolute;
+            list-style: none;
+            background: green;
+            width: 100px;
+        }
+
+        .has-sub:hover .sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="">First</a></li>
+        <li><a href="">Second</a></li>
+        <li><a href="">Third</a></li>
+        <li class="has-sub">
+            <a href="">Fourth</a>
+            <ul class="sub-menu">
+                <li><a href="">1 submenu</a></li>
+                <li><a href="">2 submenu</a></li>
+                <li><a href="">3 submenu</a></li>
+                <li><a href="">4 submenu</a></li>
+            </ul>
+        </li>
+        <li><a href="">Fifth</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!-- 
+Transition
+Универсальное свойство, которое позволяет одновременно задать значения transition-property, transition-duration, transition-timing-function и transition-delay. 
+Устанавливает эффект перехода между двумя состояниями элемента, они могут быть определены с помощью псевдоэлемента :hover или :active, а также динамически через JavaScript. 
+
+Принимает параметры:
+transition-property — имя стилевого свойства, значение которого будет отслеживаться для создания эффекта перехода;
+http://htmlbook.ru/css/transition-property
+transition-duration — время в секундах или миллисекундах, сколько должна длиться анимация перехода до её завершения;
+transition-timing-function — устанавливает, насколько быстро должно изменяться значение стилевого свойство для которого применяется эффект перехода;
+http://htmlbook.ru/css/transition-timing-function
+transition-delay — устанавливает время ожидания перед запуском эффекта перехода. Универсальное свойство, которое позволяет одновременно задать значения transition-property, transition-duration, transition-timing-function и transition-delay. 
+Устанавливает эффект перехода между двумя состояниями элемента, они могут быть определены с помощью псевдоэлемента :hover или :active, а также динамически через JavaScript. 
+-->
+
+<html>
+<head>
+    <title>Transition</title>
+    <style>
+        #menu {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            width: 600px;
+            margin: auto;
+        }
+
+        #menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        #menu li:last-child {
+            margin-right: 0;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            font-family: 'Segoe UI';
+            border-radius: 10px;
+            padding: 7px 15px;
+            font-weight: bold;
+            color: white;
+            background-color: gray;
+            transition: ease-out background-color 2000ms;
+        }
+        
+        #menu li a:hover {
+            background-color: #00c8ff;
+        }
+
+        div.box {
+            height: 500px;
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        div.box div {
+            width: 50px;
+            height: 20px;
+            background-color: green;
+            transition: width linear 4s;
+        }
+
+        div.box div:hover {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#">main</a></li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+
+    <div class="box">
+        <h1>Transition</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
