@@ -8,6 +8,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.04em;
 }
+
 /* header */
 
 header {
@@ -103,17 +104,6 @@ header {
     margin: 0 auto;
     height: 248px;
     width: 1280px;
-
-}
-/* .clearfix::after {
-    content: '';
-    clear: both;
-    display: block;
-   } */
-/* breadcrumbs */
-
-
-
 }
 .crumbs {
     margin: 0;
@@ -130,7 +120,6 @@ header {
 }
 .crumbs img {
     vertical-align: middle;
-
 }
 .crumbs li::after {
     content: url(../img/arrow.png);
@@ -203,7 +192,6 @@ footer {
 }
 .menu-link li:hover{
     color: #1C67C0;
-
 }
 .menu-link a{
     text-decoration: none;
@@ -252,7 +240,6 @@ footer {
 .social-icon a{
     width: 16px;
     height: 16px;
-
 }
 .social-icon a:last-child{
     margin-left: 9px;
