@@ -106,6 +106,7 @@ header {
     width: 1280px;
 }
 .crumbs {
+    margin-left: 30px;
     margin-top: 22px;
     padding: 0;
 }
@@ -120,6 +121,7 @@ header {
 }
 .crumbs img {
     vertical-align: middle;
+
 }
 .crumbs li::after {
     content: url(../img/arrow.png);
