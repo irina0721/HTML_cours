@@ -86,7 +86,7 @@ header {
 .button {
     float: right;
     margin: 20px;
-    padding-right: 72px;
+    padding-right: 52px;
 }
 .button a {
     border: 2px solid #0066CC;
@@ -106,7 +106,7 @@ header {
     width: 1280px;
 }
 .crumbs {
-    margin: 0;
+    margin-top: 22px;
     padding: 0;
 }
 .crumbs li {
