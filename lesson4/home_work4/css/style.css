@@ -1,0 +1,262 @@
+
+body {
+    width: 1440px;
+    height: 1287px;
+    background-color: #EDF1F3;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+}
+/* header */
+
+header {
+    height: 320px;
+    margin-top: 66px;
+    margin-left: 85px;
+    margin-right: 75px;
+    background: #fff;
+}
+
+/* logo */
+
+.logo {
+    width: 104px;
+    height: 32px;
+    margin-top: 16px;
+    margin-left: 72px;
+    float: left;
+}
+
+/* menu */
+
+.menu {
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    text-align: center;
+    float: left;
+}
+.menu li {
+    list-style: none;
+}
+.menu-item {
+    padding-top: 24px;
+    margin-left: 52px;
+    position: relative;
+    display: inline-block;
+}
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    top: 60px;
+    padding: 0;
+    line-height: 30px;
+    z-index: 1;
+}
+.sub-menu a{
+    color: #fff;
+}
+.sub-menu a:hover{
+    color: #0066CC;
+    border: 2px solid #006BE8;
+    padding-bottom: 5px;
+}
+.menu-item a:hover {
+    color: #0066CC;
+    border-bottom: 3px solid #006BE8;
+    padding-bottom: 14px;
+}
+.menu-item:hover .sub-menu {
+    display: block;
+}
+.menu-item a:hover .sub-menu a:focus {
+    background-color: #fff;
+}
+
+/* button */
+
+.button {
+    float: right;
+    margin: 20px;
+    padding-right: 72px;
+}
+.button a {
+    border: 2px solid #0066CC;
+    border-radius: 2px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #0066cc;
+    text-transform: uppercase;
+}
+
+/* offtop */
+
+.title {
+    padding: 0;
+    margin: 0 auto;
+    height: 248px;
+    width: 1280px;
+
+}
+/* .clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+   } */
+/* breadcrumbs */
+
+
+
+}
+.crumbs {
+    margin: 0;
+    padding: 0;
+}
+.crumbs li {
+    margin-left: 40px;
+    list-style: none;
+    display: inline-block;
+}
+.crumbs li a {
+    text-decoration: none;
+    color: #0066cc;
+}
+.crumbs img {
+    vertical-align: middle;
+
+}
+.crumbs li::after {
+    content: url(../img/arrow.png);
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.crumbs li.last::before,
+.crumbs li.last::after {
+    content: "";
+}
+
+/* container */
+
+.container {
+    width: 1280px;
+    height: 528px;
+    margin-left: 86px;
+    background-color: #fafafa;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.16);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.card {
+    width: 370px;
+    height: 402px;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-top: 62px;
+    float: left;
+    margin-left: 70px;
+}
+.card:last-child {
+    margin-left: 16px;
+}
+.card:nth-child(2) {
+    margin-left: 16px;
+}
+
+/* footer */
+
+footer {
+    margin-left: 87px;
+    padding: 15px;
+    width: 1250px;
+    height: 256px;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.16);
+}
+.wrapper{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.menu-link{
+    margin-top: 0;
+    width: 272px;
+    height: 136px;
+    list-style: none;
+    float: left;
+}
+.menu-link:last-child {
+    margin-left: 10px;
+}
+.menu-link:nth-child(2) {
+    margin-left: 10px;
+}
+.menu-link:nth-child(3) {
+    margin-left: 10px;
+}
+.menu-link li{
+    margin-top: 20px;
+}
+.menu-link li:hover{
+    color: #1C67C0;
+
+}
+.menu-link a{
+    text-decoration: none;
+}
+.menu-link a,
+.menu-link h3{
+    color: rgba(0, 0, 0, 0.64);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+}
+.menu-link h3{
+   line-height: 50px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #006BE8;
+}
+.menu-link span{
+    color: rgba(0, 0, 0, 0.64);
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+/* social-link */
+
+.social{
+    display: flex;
+    margin-left: -14px;
+    margin-top: 72px;
+    width: 1280px;
+    height: 48px;
+    background: #fff;
+}
+.social-right{
+    margin:16px auto;
+    color: rgba(0, 0, 0, 0.48);
+}
+.social-icon{
+    display: flex;
+    float: right;
+    margin-right: 60px;
+    margin-top: 16px;
+}
+.social-icon a{
+    width: 16px;
+    height: 16px;
+
+}
+.social-icon a:last-child{
+    margin-left: 9px;
+}
+.social-icon a:nth-child(2){
+    margin-left: 9px;
+}
