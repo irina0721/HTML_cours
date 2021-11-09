@@ -1,0 +1,4 @@
+https://fontawesome.com/start
+@font-face
+http://htmlbook.ru/css/font-face
+https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp

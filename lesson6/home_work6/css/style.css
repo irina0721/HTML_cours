@@ -1,0 +1,82 @@
+.header{
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+   display: inline-block;
+    background-color: #9fdf9f;
+    padding: 5px 10px;
+    border: 1px solid #66cc66;
+}
+abbr {
+    color: red;
+}
+h4{
+    padding: 0;
+    margin: 0;
+}
+select{
+    border: none;
+    background-color: #9fdf9f;
+}
+.title-form{
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+label {
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+    width: 40%;
+    margin-top: 25px;
+  }
+.form-user-page{
+    width: 50%;
+}
+input,
+textarea {
+    font-size: 14px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-top: 25px;
+}
+textarea {
+    vertical-align: top;
+    height: 150px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    border: none;
+    background-color: #9fdf9f;
+    color: #fff;
+    border: 1px solid #66cc66;
+    padding: 3px 25px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+  .footer{
+    display: flex;
+    justify-content: center;
+    background-color: #CCC;
+    padding: 5px 0;
+}
+.form-radio-page{
+    padding: 10px;
+    display: inline-block;
+    width: 45%;
+}
+.form-msg-page label{
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+    width: 40%;
+    margin-top: 25px;
+}
+

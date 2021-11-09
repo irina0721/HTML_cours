@@ -1,0 +1,47 @@
+<!--
+Атрибут maxlength используется для того, чтобы задать максимально допустимое значение для текстого поля.
+maxlength="5" невозможно ввести более пяти символов.
+-->
+
+<html>
+<head>
+    <title>Max length</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+        }
+
+        .form-text{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .form-text.required:after{
+            content: '*';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <br />
+        Enter your first name:
+        <input type="text" name="first_name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" maxlength="15" />
+        <br />
+        Enter your second name:
+        <input type="text" name="sec_name" size="30" maxlength="5" required/>
+        <br />
+        Enter your password:
+        <input type="password" name="password" size="30" maxlength="2" required/>
+        <br />
+        <input type="submit" name="submit" value="Enter" />
+        <br />
+        <input type="reset" name="reset" value="Reset" />
+        <span class="form-text">first name</span>
+        <br>
+        <span class="form-text required">last name</span>
+        <span class="form-text">test</span>
+        <span class="form-text">test</span>
+        <span class="form-text required">test</span>
+    </form>
+</body>
+</html>

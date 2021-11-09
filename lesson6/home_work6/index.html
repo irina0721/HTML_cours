@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title-form" name="title">
+            <h4>
+                Contact Manager
+            </h4>
+            <form class="form-group">
+                <label for="theme"></label>
+                <select name="user_theme" required="required">
+                    <option value="">More Actions</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+<div class="container">
+    <div class="form-user-page">
+        <form action="form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">First name<abbr title="required">*</abbr></label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                  <label for="lastname">Last name<abbr title="required">*</abbr></label>
+                  <input type="text" id="lastname" name="user_lastname">
+                </li>
+                <li>
+                  <label for="adress">Adress</label>
+                  <textarea type="text" id="adress" name="user_adress"></textarea>
+                </li>
+                <li>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </li>
+                <li>
+                    <label for="state">State</label>
+                    <select name="user_state" required="required">
+                        <option value="">-Select-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip">
+                </li>
+                <li>
+                    <label for="phone">Home Phone</label>
+                    <input type="tel" id="home_phone" name="home_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </li>
+                <li>
+                    <label for="work_phone">Work Phone<abbr title="required">*</abbr></label>
+                    <input type="tel" id="work_phone" name="work_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </li>
+                <li>
+                    <label for="fax_number">Fax number</label>
+                    <input type="tel" id="fax_number" name="fax_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </li>
+                <li>
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="form-radio-page">
+        <form action="form-next-page" method="post">
+            <p>When is the best time to contact you?</p>
+                <div class="radio-page">
+                    <input type="radio" id="choice1" name="contact" value="morning" checked>
+                    <label for="morning">Morning</label>
+                    <input type="radio" id="choice2" name="contact" value="afternoon">
+                    <label for="afternoon">Afternoon</label>
+                    <input type="radio" id="choice3" name="contact" value="evening">
+                    <label for="evening">Evening</label>
+                </div>
+        </form>
+        <form action="form-next-page" method="post">
+            <p>When is the best way to contact you?</p>
+                <div class="radio-page">
+                    <input type="radio" id="choice1" name="contact" value="Phone" checked>
+                    <label for="Phone">Phone</label>
+                    <input type="radio" id="choice2" name="contact" value="Email">
+                    <label for="Email">Email</label>
+                    <input type="radio" id="choice3" name="contact" value="Fax">
+                    <label for="Fax">Fax</label>
+                </div>
+        </form>
+            <div class="form-msg-page">
+                <form action="form-page" method="post">
+                <label for="msg">Message</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <button type="submit">Submit</button>
+    <button type="submit">Reset</button>
+</footer>
+</body>
+</html>

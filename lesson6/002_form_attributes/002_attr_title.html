@@ -1,0 +1,44 @@
+<!--
+   Атрибуты title отвечает за значение, которое пользователю браузер будет выдавать как подсказку при наведении на элемент, с текстом, написанном в этих атрибутах.
+   Для изменения цвета подсказки используются свойсво (placeholder) в css, 
+   для одинакового отображения цвета placeholder во всех браузерах используются вендорные префиксы (::-ms-input-) -->
+
+<html>
+<head>
+    <title>title</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: red;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: red;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <br />
+        Enter your first name:
+        <input type="text" style="width: 400px;" name="first_name" title="First Name" placeholder="Please provide your First Name" />
+        <br />
+        Enter your second name:
+        <input type="text" style="width: 400px;" name="sec_name" title="Second Name" placeholder="Please provide your Second Name"/>
+        <br />
+        Enter your password:
+        <input type="password" name="password" title="password" />
+        <br />
+        <input type="submit" name="submit" value="Enter" />
+        <br />
+        <input type="reset" name="reset" value="Reset" />
+    </form>
+</body>
+</html>

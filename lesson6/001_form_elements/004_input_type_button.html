@@ -1,0 +1,47 @@
+ <!--
+   input type="button" определяет кнопку.
+Через атрибут onclick можно определить действие, которое произойдет при клике по кнопке.
+
+input type="submit" элемент управления, инициирующий отправку данных на сервер.
+
+input type="reset" элемент формы, который реализует кнопку очистки полей формы. 
+При этом поля не просто очищаются от внесенных данных, 
+но и воcстанавливают значения по умолчанию.
+-->
+
+<html>
+<head>
+    <title>Button</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Without tag <form> <input type="reset"/> will not clear the form -->
+    <!-- <form> -->
+        <br />
+        Enter your first name:
+        <input type="text" name="first_name" />
+        <br />
+
+        Enter your second name:
+        <input type="text" name="sec_name" />
+        <br />
+
+        Enter your password:
+        <input type="password" name="password" placeholder='Enter password here' />
+        <br />
+
+        <input type="submit" name="submit" value="Enter" />
+        <br />
+
+        <input type="reset" name="reset" value="Reset" />
+        <br />
+
+        <input type="button" name="button" value="Say hello" onclick="alert('hello world')" />
+    <!-- </form> -->
+</body>
+</html>
