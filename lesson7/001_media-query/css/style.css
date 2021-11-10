@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    /* min-width: 310px; */
+    /* width: 1240px; */
+    border: 2px solid #000;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    width: 250px;
+    margin: 25px;
+    padding: 25px;
+    flex-grow: 1;
+    box-shadow: 2px 2px 12px rgb(131, 130, 130);
+}
+
+.box1 { 
+    background-color: rgb(253, 212, 136);
+}
+
+.box2 { 
+    background-color: rgb(48, 228, 235);
+}
+
+.box3 { 
+    background-color: rgb(191, 51, 226);
+    color: rgb(255, 255, 255);
+}
+
+.box4 { 
+    background-color: rgb(132, 103, 236);
+    color: rgb(255, 255, 255);
+}
+
+.box5 { 
+    background-color: rgb(106, 245, 129);
+}
+
+.box6 { 
+    background-color: rgb(253, 136, 152);
+}
+
+/* Если ширина экрана меньше или равна 1024рх */
+@media (max-width: 1024px) {
+    .box3,
+    .box4 {
+        display: none;
+    }
+}
+
+/* Если ширина экрана меньше или равна 768рх */
+@media (max-width: 768px) {
+    .box1,
+    .box6 {
+        display: none;
+    }
+}
+
+/* Если ширина экрана меньше или равна 320рх */
+@media (max-width: 320px) {
+    .box2 {
+        display: none;
+    }
+}
+
+@media (orientation:landscape) {
+    body {
+        background-color: rgb(248, 224, 143);
+    }
+}
+
+@media (orientation:portrait) {
+    body {
+        background-color: rgb(215, 250, 176);
+    }
+}
